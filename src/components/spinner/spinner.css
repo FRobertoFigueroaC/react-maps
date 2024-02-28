@@ -1,0 +1,40 @@
+
+:root {
+  --hue: 223;
+  --bg: #61DBFB;
+  --fg: #d4dadc;
+  --primary: #00539F;
+  --trans-dur: 0.3s;
+  font-size: calc(16px + (32 - 16) * (100vw - 320px) / (2560 - 320));
+}
+.spinner{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 40%;
+  left: 40%;
+}
+.world {
+  width: 150px;
+  height: 150px;
+  background: url(https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg);
+  border-radius: 100%;
+  background-size: 380px;
+  animation: spin 3.5s infinite linear;
+}
+.loading {
+  margin-left: 10%;
+  text-align: left;
+  margin-top: 15px;
+  color: #51609B;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 380px
+  }
+}
